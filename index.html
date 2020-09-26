@@ -1,7 +1,206 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/*container*/
+#container {
+  background-color: white;  
+  position: absolute;  
+  margin: 0 auto;
+  text-align: left;
+  left:30%;
+  top:20px;
+  width: 600px;
+  padding: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+/* title "Hi, I'm Natasha A Elliott" */
+h1 {
+  letter-spacing: -3px;
+}
+
+p.small {
+  line-height: 0.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*images*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/*nav menu */    
+      ul.breadcrumb {
+  padding: 3px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "⚬";
+}
+ul.breadcrumb li a {
+  color: royalblue;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: indigo;
+  text-decoration: underline;
+}
+
+/*responsive*/
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+} 
+    
+/*copy text*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid black;
+}
+
+
+    </style>
+
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+<div id = "container"><center><h1><p style = "font-variant:small-caps;"><p class="small">Hi, I'm Natasha A. Elliott</h1>
+I am interested in the brain-body connection and how it relates to mood disorders. </p></p>
+<hr class="solid"></center>
+<p>As a PhD researcher at the University of Nottingham, I am investigating the interaction between neural and visceral oscillations during theraputic interventions and how this influences our ability to control thoughts and actions. 
+</p>
+
+<center><div class="row">
+    <div class="column">
+      <img src="img_snow.jpg" alt="brains" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img_forest.jpg" alt="photo of me" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+    </div></center>
+
+
+<p>Outside of research I enjoy vegan cooking, gaming, reading, photography, running, yoga, learning Japanese and volunteering! </p>
+
+You can contact me at 
+<input type="text" value="natasha.elliott@nottingham.ac.uk" id="myInput">
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy text
+  </button>
+</div>
+
+</br>
+</br>
+
+
+<center>
+<ul class="breadcrumb">
+    <li><a href="https://www.nottingham.ac.uk/medicine/about/divisions-and-units/psychiatry-and-applied-psychology/people/natasha.elliott">Staff Profile</a></li>
+    <li>Blog</li>
+    <li><a href="https://twitter.com/naxelliott">Twitter</a></li>
+    <li><a href="https://uk.linkedin.com/in/naxelliott">Linkedin</a></li>
+  </ul></center>
+</div>
+
+
+
+<script>
+    /* java for copy function */
+    function myFunction() {
+      var copyText = document.getElementById("myInput");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Done!";
+    }
+    
+    function outFunc() {
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copy to clipboard";
+    }
+
+    </script>
+
 </body>
 </html>
