@@ -16,9 +16,10 @@ body {
   padding: 0;
   font-family: "Darker Grotesque", sans-serif;
   font-size: 18px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
   text-align: justify;
-  text-justify: newspaper;  
+  
+
   
 }
 
@@ -26,47 +27,62 @@ body {
 #container {
   background-color: white;  
   position: absolute;  
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 600px;
+  height: 850px;
   margin: 0 auto;
+  text-overflow: ellipsis;
   left:30%;
   right:30%;
-  top:10%;
-  bottom:10%;
-  width: 600px;
-  padding: 25px;
+  top:5%;
+  bottom:10%; 
+  padding-top:1%; 
+  padding-right:1%;
+  padding-left:1%;
+  padding-bottom: 0%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   
   
 }
 
-/* title "Hi, I'm Natasha A Elliott" */
+/* title */
 h1 {
   letter-spacing: -3px;
-  font-family:Fredericka the Great;
+  font-family:Fredericka the Great;  
+  
+
 }
 p.small {
-  line-height: 0.3;
+  line-height: 0.3;  
+  
+
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;  
+  
 }
 
 /* increase line spacing */
 p {
   line-height: 1.8 ;
+  
 }
 
+.Site-Content-Container{min-width: 960px;}
 
 
 
 /*nav menu */    
       ul.breadcrumb {
-  padding: 3px 16px;
+  padding: 3px 16px;  
   clear:left;
   height:30px;  
-  margin-top:100px;
+  margin-top:30px;
   margin-right:20px;
-  margin-bottom:50px;
+  margin-bottom:10px;
   margin-left:20px;  
   list-style: none;
   background-color: #eee;
@@ -136,7 +152,7 @@ ul.breadcrumb li a:hover {
 }
 
 input {
-    width: 40%;
+    width: 42%;
 }
 
 
@@ -153,12 +169,12 @@ hr.solid {
 </head>
 <body>
 
-
-<div id = "container"><center><h1><p class="small">Hi, I'm Natasha A. Elliott</h1>
+  <div id = "container"><center><h1><p class="small">Hi, I'm Natasha A. Elliott</h1>
 I am interested in the brain-body connection and how it relates to mood disorders. </p>
 <hr class="solid"></center>
-<p>As a PhD researcher at the University of Nottingham, I am investigating the interaction between neural and visceral oscillations during therapeutic interventions and how this influences our ability to control thoughts and actions. 
+<p>As a <b>PhD researcher</b> at the <b>University of Nottingham</b>, I am investigating the interaction between neural and visceral oscillations during therapeutic interventions and how this influences our ability to control thoughts and actions. 
 </p>
+<p>Prior to my current work, I studied at Cardiff and Keele University whilst assisting part-time in hospitals. </p>
 
 
 <center>
