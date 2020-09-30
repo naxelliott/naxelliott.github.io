@@ -1,229 +1,135 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Darker Grotesque">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
-    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Darker Grotesque">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
+    </head>
     <style>
+        body {
+            background-color: whitesmoke;          
+            font-family: "Darker Grotesque", sans-serif;            
+            letter-spacing: 0.1px; 
+            font-size: 18px;                                
+        }
 
-body {
-  background-color: whitesmoke;
-  margin: 0;
-  padding: 0;
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 18px;
-  letter-spacing: 0.2px;
-  text-align: justify;
-  
+            /* title */
+            h1 {
+                letter-spacing: -3px;
+                font-size: 40px;
+                font-family:Fredericka the Great;   
+            } 
+            h2 {
+                font-size: 20px;
+                font-family: "Darker Grotesque", sans-serif; 
+            }        
 
-  
-}
+            /* increase line spacing */
+            p {                
+                line-height: 1.8 ;
+            }
 
-/*container*/
-#container {
-  background-color: white;  
-  position: absolute;  
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: 600px;
-  height: 850px;
-  margin: 0 auto;
-  text-overflow: ellipsis;
-  left:30%;
-  right:30%;
-  top:5%;
-  bottom:10%; 
-  padding-top:1%; 
-  padding-right:1%;
-  padding-left:1%;
-  padding-bottom: 0%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  
-  
-}
+            .bg-1 {
+                background-color:white; 
+                             
+            }
+            .bg-2 {
+                background-color: white;                                          
+            }    
+            .bg-3 {
+                background-color: gainsboro;
+            }
+            .nav{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size: 20px;
+                letter-spacing: 2px;
 
-/* title */
-h1 {
-  letter-spacing: -3px;
-  font-family:Fredericka the Great;  
-  
+            }            
+            .img-thumbnail {
+                width: 50%;
+                height: 50%;
+                margin-bottom: 10px;
+            }
 
-}
-p.small {
-  line-height: 0.3;  
-  
-
-}
-
-* {
-  box-sizing: border-box;  
-  
-}
-
-/* increase line spacing */
-p {
-  line-height: 1.8 ;
-  
-}
-
-.Site-Content-Container{min-width: 960px;}
-
-
-
-/*nav menu */    
-      ul.breadcrumb {
-  padding: 3px 16px;  
-  clear:left;
-  height:30px;  
-  margin-top:30px;
-  margin-right:20px;
-  margin-bottom:10px;
-  margin-left:20px;  
-  list-style: none;
-  background-color: #eee;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "⚬";
-}
-ul.breadcrumb li a {
-  color: royalblue;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: indigo;
-  text-decoration: underline;
-}
-
-/*responsive*/
-.responsive {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-} 
-    
-/*copy text*/
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-input {
-    width: 42%;
-}
-
-
-
-/* Solid border */
-hr.solid {
-  border-top: 2px solid black;
-}
-
+            .drop-shadow {
+                -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+                box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+            }   
+            .container.drop-shadow {
+                padding-left:0;
+                padding-right:0;
+            }
+            
+            .container{
+                padding:3;                                
+                max-width: 600px;
+                max-height:780px;
+            }
+            
 
     </style>
 
+    <body>
+    <div class="container drop-shadow">        
+        <div class = "container bg-1 text-center">            
+            <h1>Hi, I'm Natasha A. Elliott</h1>
+            <h2>I am interested in the brain-body connection and how it relates to mood disorders.</h2>
+            <hr>       
+        </div>
+            <div class="container bg-2 text-left">
+                <p>As a <kbd>PhD researcher</kbd> at the <kbd>University of Nottingham</kbd>, I am investigating the interaction between neural and visceral oscillations during therapeutic interventions and how this influences our ability to control thoughts and actions. </p>
+                <p>Prior to my current work, I studied at Cardiff and Keele University whilst assisting part-time in hospitals. </p>
+                <div class="container text-center">
+                <img src="me.jpg" class="img-thumbnail" alt="photo of me">
+                </div>
+                <p>Outside of research I enjoy vegan cooking, gaming, reading, photography, running, yoga, learning Japanese and volunteering! </p>
 
-</head>
-<body>
+                &nbsp;&nbsp;&nbsp;&nbsp;You can contact me at
+                <kbd>natasha.elliott@nottingham.ac.uk</kbd>
+                <br><br>
+               
 
-  <div id = "container"><center><h1><p class="small">Hi, I'm Natasha A. Elliott</h1>
-I am interested in the brain-body connection and how it relates to mood disorders. </p>
-<hr class="solid"></center>
-<p>As a <b>PhD researcher</b> at the <b>University of Nottingham</b>, I am investigating the interaction between neural and visceral oscillations during therapeutic interventions and how this influences our ability to control thoughts and actions. 
-</p>
-<p>Prior to my current work, I studied at Cardiff and Keele University whilst assisting part-time in hospitals. </p>
+            </div>                
+        
+        <footer class="container bg-3 text-center">
+            <div class="nav nav-pills">
+                <a href="https://www.nottingham.ac.uk/medicine/about/divisions-and-units/psychiatry-and-applied-psychology/people/natasha.elliott" class="btn btn-default">UoN Profile</a>
+                <a href="https://twitter.com/naxelliott" class="btn btn-default">Twitter</a>
+                <a href="https://uk.linkedin.com/in/naxelliott" class="btn btn-default">Linkedin</a>
+            </div>
+        </footer>        
+    </div>
+            
 
-
-<center>
-      <img src="box.png" alt="photo of me" style="width:80%">
-       </center>
-
- 
-<p>Outside of research I enjoy vegan cooking, gaming, reading, photography, running, yoga, learning Japanese and volunteering! </p>
-
-&nbsp;&nbsp;&nbsp;&nbsp;You can contact me at &ensp;
-<input type="text" value="natasha.elliott@nottingham.ac.uk" id="myInput">
-
-<div class="tooltip">
-<button onclick="myFunction()" onmouseout="outFunc()">
-  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-  Copy text
-  </button>
-</div>
-
-
-<center>
-<ul class="breadcrumb">
-    <li><a href="https://www.nottingham.ac.uk/medicine/about/divisions-and-units/psychiatry-and-applied-psychology/people/natasha.elliott">UoN Profile</a></li>
-    &nbsp;<li>Blog</li>
-    &nbsp;<li><a href="https://twitter.com/naxelliott">Twitter</a></li>
-    &nbsp;<li><a href="https://uk.linkedin.com/in/naxelliott">Linkedin</a></li>
-  </ul></center>
-</div>
+       
 
 
 
-<script>
-    /* java for copy function */
-    function myFunction() {
-      var copyText = document.getElementById("myInput");
-      copyText.select();
-      copyText.setSelectionRange(0, 99999);
-      document.execCommand("copy");
-      
-      var tooltip = document.getElementById("myTooltip");
-      tooltip.innerHTML = "Done!";
-    }
-    
-    function outFunc() {
-      var tooltip = document.getElementById("myTooltip");
-      tooltip.innerHTML = "Copy to clipboard";
-    }
+        <script>
+                /* java for copy function */
+                function myFunction() {
+                var copyText = document.getElementById("myInput");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                document.execCommand("copy");
+            
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Done!";
+            }
+            
+                function outFunc() {
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copy to clipboard";
+            }
+        </script>
 
-    </script>
-
-</body>
+    </body>
 </html>
