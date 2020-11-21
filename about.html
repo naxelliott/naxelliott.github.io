@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+    <head>        
         <title>About</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +20,10 @@
             font-size: 18px;   
             filter: grayscale(70%);                             
         }
-
-            
+            .h1 {
+                font-family:Fredericka the Great; 
+                font-size: 40px;
+            }
             h2 {
                 font-size: 18px;
                 font-family: "Darker Grotesque", sans-serif; 
@@ -52,12 +54,11 @@
 
             }            
             .img-thumbnail {
-                max-width: 300px;
+                max-width: 200px;
                 max-height: 300px;
                 width:100%;
                 margin-bottom: 10px;
             }
-
             .drop-shadow {
                 -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
                 box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
@@ -68,8 +69,8 @@
             }
             
             .container{                                               
-                max-width: 600px;
-                max-height: 780px;
+                max-width: 900px;
+                max-height: 800px;
                 width:100%;            
 
             }
@@ -88,92 +89,54 @@
             .navbar-brand {
                 font-family:Fredericka the Great; 
                 font-size: 30px;
-            }
-            .active_page a {
-                background-color:silver; !important            
-            }
-      
-
-
+            } 
+            
 
 
     </style>
 
     <body>
-        <nav class="navbar navbar-default drop-shadow">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index">Natasha A. Elliott</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav nav-pills navbar-right">
-                  <li class="active_page"><a href="about">About</a></li>
-                  <!--<li><a href="#">Another page</a></li>
-                  <li><a href="CV.html">CV</a></li>-->
-                </ul>
-              </div>
+        &nbsp; 
+        <div class="text-center"><a class="h1" href="index">Natasha A. Elliott</a></div>
+        &nbsp; 
+
+        <div class="container">        
+            <div class="row">
+            <div class="col-sm-4">
+                <div class = "text-center text-dark"> 
+                    <ul class="nav flex-column">
+                        <hr> 
+                        <li><a href="about">About</a></li>
+                         <!--<li><a href="#">Another page</a></li>-->
+                        <!--<li><a href="CV.html">CV</a></li> -->                 
+                    </ul>
+                    <hr>                          
+                    <a href="https://twitter.com/naxelliott"> <i class="fa fa-twitter fa-lg"></i></a>&nbsp; &nbsp;       
+                    <a href="https://uk.linkedin.com/in/naxelliott"> <i class="fa fa-linkedin fa-lg"></i></a>&nbsp; &nbsp;
+                    <a href="mailto:natasha.elliott@nottingham.ac.uk"><i class="fa fa-envelope"></i></a>
+                    <hr>         
+                    
+                    </div>          
             </div>
-          </nav> 
 
 
-        <br>
-    <div class="bg-1 container"> 
-        <br>      
 
-        <div class="text-left">
-            <p>For my PhD research, I am investigating the interaction between neural and visceral oscillations during therapeutic interventions and how this influences our ability to control thoughts and actions. </p>
-            <p>Prior to my current work, I studied for an <a href="https://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/neuroimaging-methods-and-applications-msc">MSc in Neuroimaging: Methods and Applications</a>, and even more prior I completed an undergraduate degree in <a href = "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/psychology/">Psychology.</a> 
-            Alongside these degrees I worked in various hospitals and volunteered for mental health services. 
-            </p>
-                 
-            <div class="text-center">
-                <img src="me.jpg" class="img-thumbnail" alt="photo of me">
+            <div class="col-sm-8">
+                <p>For my PhD research, I am investigating the interaction between neural and visceral oscillations during therapeutic interventions and how this influences our ability to control thoughts and actions. </p>
+                <p>Prior to my current work, I studied for an <a href="https://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/neuroimaging-methods-and-applications-msc">MSc in Neuroimaging: Methods and Applications</a>, and even more prior I completed an undergraduate degree in <a href = "https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/psychology/">Psychology.</a> 
+                Alongside these degrees I worked in various hospitals and volunteered for mental health services. 
+                </p>
+                     
+                <div class="text-center">
+                    <img src="me2.jpg" class="img-thumbnail" alt="Hello World">
+                </div>
+                    <p>Outside of research I enjoy vegan cooking, gaming, reading, photography, running, yoga and learning Japanese! </p>
+             
+                    <footer><small><a href="https://naxelliott.mit-license.org/">Copyright</a> &copy; 2020 Natasha A. Elliott</small></footer>                          
+
             </div>
-                <p>Outside of research I enjoy vegan cooking, gaming, reading, photography, running, yoga and learning Japanese! </p>
-         
-
-        </div> 
-        <hr>
-        <div class="text-center">                
-            <a href="https://twitter.com/naxelliott"> <i class="fa fa-twitter fa-lg"></i></a>&nbsp; &nbsp;       
-            <a href="https://uk.linkedin.com/in/naxelliott"> <i class="fa fa-linkedin fa-lg"></i></a>&nbsp; &nbsp;
-            <a href="mailto:natasha.elliott@nottingham.ac.uk"><i class="fa fa-envelope"></i></a>
-            <br>
-            <br>            
-            <footer><small><a href="https://naxelliott.mit-license.org/">Copyright</a> &copy; 2020 Natasha A. Elliott</small></footer>
             </div>
-        
-        
-
-
-  
-
-       
-
-
-
-        <script>
-                /* java for copy function */
-                function myFunction() {
-                var copyText = document.getElementById("myInput");
-                copyText.select();
-                copyText.setSelectionRange(0, 99999);
-                document.execCommand("copy");
-            
-                var tooltip = document.getElementById("myTooltip");
-                tooltip.innerHTML = "Done!";
-            }
-            
-                function outFunc() {
-                var tooltip = document.getElementById("myTooltip");
-                tooltip.innerHTML = "Copy to clipboard";
-            }
-        </script>
-
+        </div>
     </body>
-</html>
+
+  </html>

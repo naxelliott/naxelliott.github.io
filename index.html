@@ -20,8 +20,10 @@
             font-size: 18px;   
             filter: grayscale(70%);                             
         }
-
-
+            .h1 {
+                font-family:Fredericka the Great; 
+                font-size: 40px;
+            }
             h2 {
                 font-size: 18px;
                 font-family: "Darker Grotesque", sans-serif; 
@@ -57,7 +59,6 @@
                 width:100%;
                 margin-bottom: 10px;
             }
-
             .drop-shadow {
                 -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
                 box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
@@ -68,8 +69,8 @@
             }
             
             .container{                                               
-                max-width: 600px;
-                max-height: 780px;
+                max-width: 900px;
+                max-height: 800px;
                 width:100%;            
 
             }
@@ -88,91 +89,55 @@
             .navbar-brand {
                 font-family:Fredericka the Great; 
                 font-size: 30px;
-            }
-
-        
-
-
+            } 
+            
 
 
     </style>
 
     <body>
-        <nav class="navbar navbar-default drop-shadow">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index">Natasha A. Elliott</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav nav-pills navbar-right">
-                  <li><a href="about">About</a></li>
-                  <!--<li><a href="#">Another page</a></li>
-                  <li><a href="CV.html">CV</a></li>-->
-                </ul>
-              </div>
+        &nbsp; 
+        <div class="text-center"><a class="h1" href="index">Natasha A. Elliott</a></div>
+        &nbsp; 
+
+        <div class="container">        
+            <div class="row">
+            <div class="col-sm-4">
+                <div class = "text-center text-dark"> 
+                    <ul class="nav flex-column">
+                        <hr> 
+                        <li><a href="about">About</a></li>
+                         <!--<li><a href="#">Another page</a></li>-->
+                        <!--<li><a href="CV.html">CV</a></li> -->                 
+                    </ul>
+                    <hr>                          
+                    <a href="https://twitter.com/naxelliott"> <i class="fa fa-twitter fa-lg"></i></a>&nbsp; &nbsp;       
+                    <a href="https://uk.linkedin.com/in/naxelliott"> <i class="fa fa-linkedin fa-lg"></i></a>&nbsp; &nbsp;
+                    <a href="mailto:natasha.elliott@nottingham.ac.uk"><i class="fa fa-envelope"></i></a>
+                    <hr>         
+                    
+                    </div>          
             </div>
-          </nav> 
 
 
-        <br>
-    <div class="bg-1 container">          
-        <div class="text-left">
-            <br>
-            <p>Hi, I'm Natasha. I am a PhD researcher based at The Centre for Translational Neuroimaging at
-                <a href= "https://www.institutemh.org.uk/">The Institute of Mental Health</a>,
-                <a href = "https://www.nottingham.ac.uk/">University of Nottingham.</a></p>
-                <p>I am interested in the brain-body connection and how it relates to mood disorders.</p>
-                
-                <div class="text-center">
-                    <img src="me.jpg" class="img-thumbnail" alt="photo of me">
-                </div>
-            <p>Explore this website to find out more about me and my research.
-                Interested in connecting with me? Send an email or follow me using the links below. 
-                </p>         
-                
-        </div> 
-        
-        <hr>  
-        <div class = "text-center text-dark">          
-            <a href="https://twitter.com/naxelliott"> <i class="fa fa-twitter fa-lg"></i></a>&nbsp; &nbsp;       
-            <a href="https://uk.linkedin.com/in/naxelliott"> <i class="fa fa-linkedin fa-lg"></i></a>&nbsp; &nbsp;
-            <a href="mailto:natasha.elliott@nottingham.ac.uk"><i class="fa fa-envelope"></i></a>
-            <br>
-            <br>            
-            <footer><small><a href="https://naxelliott.mit-license.org/">Copyright</a> &copy; 2020 Natasha A. Elliott</small></footer>
+
+            <div class="col-sm-8">
+                <p>Hi, I'm Natasha. I am a PhD researcher based at The Centre for Translational Neuroimaging at
+                    <a href= "https://www.institutemh.org.uk/">The Institute of Mental Health</a>,
+                    <a href = "https://www.nottingham.ac.uk/">University of Nottingham.</a></p>
+                    <p>I am interested in the brain-body connection and how it relates to mood disorders.</p>
+                    
+                    <div class="text-center">
+                        <img src="me.jpg" class="img-thumbnail" alt="I shout into the great unknown">
+                    </div>
+                <p>Explore this website to find out more about me and my research.
+                    Interested in connecting with me? Send an email or follow me on social media.
+                    </p>
+                    <footer><small><a href="https://naxelliott.mit-license.org/">Copyright</a> &copy; 2020 Natasha A. Elliott</small></footer>                          
+
             </div>
-        
-        
-
-
-  
-
-       
-
-
-
-        <script>
-                /* java for copy function */
-                function myFunction() {
-                var copyText = document.getElementById("myInput");
-                copyText.select();
-                copyText.setSelectionRange(0, 99999);
-                document.execCommand("copy");
-            
-                var tooltip = document.getElementById("myTooltip");
-                tooltip.innerHTML = "Done!";
-            }
-            
-                function outFunc() {
-                var tooltip = document.getElementById("myTooltip");
-                tooltip.innerHTML = "Copy to clipboard";
-            }
-        </script>
-
+            </div>
+        </div>
     </body>
-</html>
+
+  </html>
