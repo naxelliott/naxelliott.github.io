@@ -1,0 +1,79 @@
+baseurl = "http://www.naxelliott.co.uk"
+title = "Natasha A. Elliott" 
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+#disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Natasha A. Elliott, Ph.D."
+  info = "Cognitive Neuroscientist | Data Analyst | Mental health research"
+  description = "Natasha Elliott's personal website"
+  keywords = "blog,personal"
+  # avatarurl = "images/favicon-16x16.png"
+  gravatar = "naxelli@pm.me"
+  
+
+  since = 2023
+
+  enableTwemoji = true
+
+  colorScheme = "light"
+  hidecolorschemetoggle = true
+
+  # Series see also post count
+  maxSeeAlsoItems = 5
+  
+
+#   customCSS = ["css/custom.css"]
+ #  customSCSS = ["scss/custom.scss"]
+ #  customJS = ["js/custom.js"]
+
+
+ #font-family = "Cinzel Decorative"
+
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+#[[params.social]]
+#  name = "Github"
+#  icon = "fa fa-github fa-2x"
+ # weight = 1
+#  url = "https://github.com/johndoe/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 2
+  url = "https://twitter.com/naxelliott"
+[[params.social]]
+  name = "Linkedin"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 3
+  url = "https://www.linkedin.com/in/naxelliott/"
+
+
+
+# Menu links
+#[[menu.main]]
+#  name = "Blog"
+#  weight = 2
+#  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+[[menu.main]]
+  name = "Contact me"
+  weight = 3
+  url = "mailto:hi@naxelliott.co.uk"
