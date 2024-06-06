@@ -13,4 +13,4 @@ For my PhD research, I investigated the mechanistic interaction between neural a
 
 Since completing my PhD, I have worked as a Clinical Editor for a digital health tech startup where I assisted in developing disease risk models and maintaining global ISO-certified products. I am currently conducting small scale research projects to further develop my skills in data science and create new insights for mental health research, such as applying NLP to understand user experience with meditation applications.  
 
-Outside of research I enjoy vegan cooking, gaming, reading, photography, running, yoga and learning Japanese!
+Outside of research I enjoy vegan cooking, gaming, reading, photography, running and learning Japanese!
